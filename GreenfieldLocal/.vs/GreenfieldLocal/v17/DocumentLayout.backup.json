@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|c:\\users\\digi-t-y2-5\\source\\repos\\izwork\\task2exam\\greenfieldlocal\\greenfieldlocal\\controllers\\supplierdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F748E515-E79E-4287-B512-649C98795EDE}|GreenfieldLocal\\GreenfieldLocal.csproj|solutionrelative:greenfieldlocal\\controllers\\supplierdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,92 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Views\\Orders\\Create.cshtml",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Views\\Orders\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Views\\Orders\\Create.cshtml",
-              "RelativeToolTip": "GreenfieldLocal\\Views\\Orders\\Create.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwFYAAAAkAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Views\\SupplierDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "GreenfieldLocal\\Views\\SupplierDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Views\\SupplierDashboard\\Index.cshtml",
+              "RelativeToolTip": "GreenfieldLocal\\Views\\SupplierDashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:47:17.471Z",
+              "WhenOpened": "2026-04-14T12:13:47.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "GreenfieldLocal\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDUAAAAaAAAAAAAAAA==",
+              "Title": "SupplierDashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\SupplierDashboardController.cs",
+              "RelativeDocumentMoniker": "GreenfieldLocal\\Controllers\\SupplierDashboardController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\SupplierDashboardController.cs",
+              "RelativeToolTip": "GreenfieldLocal\\Controllers\\SupplierDashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:46:22.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Views\\Baskets\\Index.cshtml",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Views\\Baskets\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Views\\Baskets\\Index.cshtml",
-              "RelativeToolTip": "GreenfieldLocal\\Views\\Baskets\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:19:00.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BasketsController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\BasketsController.cs",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Controllers\\BasketsController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\BasketsController.cs",
-              "RelativeToolTip": "GreenfieldLocal\\Controllers\\BasketsController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwEwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:06:22.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BasketProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\BasketProductsController.cs",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Controllers\\BasketProductsController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Controllers\\BasketProductsController.cs",
-              "RelativeToolTip": "GreenfieldLocal\\Controllers\\BasketProductsController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAwDwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T13:54:05.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Program.cs",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Program.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Program.cs",
-              "RelativeToolTip": "GreenfieldLocal\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T12:03:10.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "GreenfieldLocal\\Data\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\Data\\SeedData.cs",
-              "RelativeToolTip": "GreenfieldLocal\\Data\\SeedData.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAowJ0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T11:37:38.713Z",
+              "WhenOpened": "2026-04-14T12:13:06.728Z",
               "EditorCaption": ""
             }
           ]

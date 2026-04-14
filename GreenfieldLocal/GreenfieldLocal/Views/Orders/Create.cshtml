@@ -65,7 +65,7 @@
     const minDate = today.toISOString().split("T")[0];
 
     if (collectionDateInput){
-    collectionDateInput.min = minDate
+        collectionDateInput.min = minDate;
     }
 
     const deliveryCheck = document.getElementById("deliveryCheck");
@@ -75,29 +75,31 @@
     const collectionDateGroup = document.getElementById("collectionDateGroup");
 
     function updateForm() {
-    deliveryTypeGroup.style.display = "none";
-    collectionDateGroup.style.display = "none";
+        deliveryTypeGroup.style.display = "none";
+        collectionDateGroup.style.display = "none";
 
-    deliveryCheck.disabled = false;
-    collectionCheck.disabled = false;
+        deliveryCheck.disabled = false;
+        collectionCheck.disabled = false;
 
-    if (deliveryCheck.checked) {
+        if (deliveryCheck.checked) {
 
-    deliveryTypeGroup.style.display = "block";
-    collectionCheck.disabled = true;
+            deliveryTypeGroup.style.display = "block";
+            collectionCheck.disabled = true;
 
-    }
-    else if (collectionCheck.checked) {
+        }
+        else if (collectionCheck.checked) {
 
-    collectionDateGroup.style.display = "block";
-    deliveryCheck.disabled = true;
+            collectionDateGroup.style.display = "block";
+            deliveryCheck.disabled = true;
 
-    }
+        }
 
     }
 
     deliveryCheck.addEventListener("change", updateForm);
     collectionCheck.addEventListener("change", updateForm);
+
+    updateForm();
 </script>
 
 @section Scripts {

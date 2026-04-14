@@ -1,0 +1,19 @@
+﻿@model IEnumerable<GreenfieldLocal.Models.Supplier>
+
+@{
+    ViewData["Title"] = "Supplier Dashboard";
+}
+
+<h1>Supplier Dashboard</h1>
+
+<p>
+    <strong>Total Products:</strong> @ViewBag.TotalProducts
+</p>
+<p>
+    <strong>Low Stock Products:</strong> @ViewBag.LowStockCount
+</p>
+<p>
+    <strong>Total Stock Units:</strong> @ViewBag.TotalStock
+</p>
+
+

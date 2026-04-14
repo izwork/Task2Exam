@@ -56,9 +56,6 @@ namespace GreenfieldLocal.Data.Migrations
                     b.Property<int>("BasketId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ProductsId")
                         .HasColumnType("int");
 

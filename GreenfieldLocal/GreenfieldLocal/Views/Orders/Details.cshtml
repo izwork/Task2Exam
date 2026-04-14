@@ -1,66 +1,60 @@
-﻿@model GreenfieldLocal.Models.Orders
+﻿@model IEnumerable<GreenfieldLocal.Models.OrderProducts>
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Order Details";
+    var firstItem = Model.FirstOrDefault();
 }
 
-<h1>Details</h1>
+<h1>Order Details</h1>
 
-<div>
-    <h4>Orders</h4>
+@if (firstItem != null)
+{
+    <div>
+        <p><strong>Order Id:</strong>@firstItem.Orders.OrdersId</p>
+        <p><strong>Order Date:</strong>@firstItem.Orders.OrderDate</p>
+        <p><strong>Status:</strong>@firstItem.Orders.OrderTrackingStatus</p>
+        <p><strong>Subtotal:</strong>@firstItem.Orders.Subtotal.ToString("0.00")</p>
+
+        @if (firstItem.Orders.Delivery)
+        {
+            <p><strong>Order Method:</strong>Delivery</p>
+            <p><strong>Delivery Type:</strong>@firstItem.Orders.DeliveryType</p>
+        }
+
+        @if (firstItem.Orders.Collection)
+        {
+            <p><strong>Order Method:</strong>Collection</p>
+            <p><strong>Collection Date:</strong>@firstItem.Orders.CollectionDate</p>
+        }
+    </div>
+
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Subtotal)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Subtotal)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Delivery)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Delivery)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Collection)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Collection)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DeliveryType)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DeliveryType)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderTrackingStatus)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderTrackingStatus)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CollectionDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CollectionDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderDate)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.OrdersId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+    <h2>Products in this Order</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th styele="text-align:left; padding-right:20px;">Product</th>
+                <th styele="text-align:left; padding-right:20px;">Price</th>
+                <th styele="text-align:left; padding-right:20px;">Quantity</th>
+                <th styele="text-align:left; padding-right:20px;">Line Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td styele="text-align:left; padding-right:20px;">@item.Products.ProductName</td>
+                    <td styele="text-align:left; padding-right:20px;">@item.Products.Price.ToString("0.00")</td>
+                    <td styele="text-align:left; padding-right:20px;">@item.Quantity</td>
+                    <td styele="text-align:left; padding-right:20px;">@((item.Products.Price * item.Quantity).ToString("0.00"))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<div style="margin-top:20px;">
+    <a asp-action="Index">Back to List</a>"
 </div>

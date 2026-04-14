@@ -61,24 +61,27 @@ namespace GreenfieldLocal.Controllers
         public async Task<IActionResult> Create(int ProductsId)
         {
             var product = await _context.Products.FirstOrDefaultAsync(x => x.ProductsId == ProductsId);
+           
             if (product == null)
             {
                 return NotFound();
             }
 
-            var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (UserId == null)
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            
+            if (userId == null)
             {
                 return Unauthorized();
             }
 
-            var basket = await _context.Basket.FirstOrDefaultAsync(x => x.UserId == UserId && x.Status == true);
+            var basket = await _context.Basket.FirstOrDefaultAsync(x => x.UserId == userId && x.Status == true);
+           
             if (basket == null)
             {
                 basket = new Basket
                 {
                     Status = true,
-                    UserId = UserId,
+                    UserId = userId,
                     BasketCreatedAt = DateTime.UtcNow,
                 };
 
@@ -86,7 +89,9 @@ namespace GreenfieldLocal.Controllers
                 await _context.SaveChangesAsync();
             }
 
-            var basketProduct = await _context.BasketProducts.FirstOrDefaultAsync(bp => bp.BasketId == basket.BasketId && bp.BasketProductsId == ProductsId);
+            var basketProduct = await _context.BasketProducts
+                .FirstOrDefaultAsync(bp => bp.BasketId == basket.BasketId && bp.ProductsId == ProductsId);
+            
             if (basketProduct != null)
             {
                 basketProduct.Quantity++;
@@ -96,7 +101,7 @@ namespace GreenfieldLocal.Controllers
                 basketProduct = new BasketProducts
                 {
                     BasketId = basket.BasketId,
-                    ProductId = ProductsId,
+                    ProductsId = ProductsId,
                     Quantity = 1
                 };
 
@@ -104,6 +109,7 @@ namespace GreenfieldLocal.Controllers
             }
 
             await _context.SaveChangesAsync();
+
             return RedirectToAction("Index", "Baskets");
         }
 

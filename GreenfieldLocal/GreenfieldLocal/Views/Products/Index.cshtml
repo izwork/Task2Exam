@@ -53,6 +53,7 @@
                     <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a> |
                     <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a>
                     <form asp-controller="BasketProducts" asp-action="Create" method="post">
+                        <input type="hidden" name="ProductsId" value="@item.ProductsId" />
 
                         @if (item.Stock > 0)
                         {

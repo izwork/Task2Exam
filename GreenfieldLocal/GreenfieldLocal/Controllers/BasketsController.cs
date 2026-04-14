@@ -30,7 +30,9 @@ namespace GreenfieldLocal.Controllers
                 return Unauthorized();
             }
 
-            var basket = await  _context.Basket.FirstOrDefaultAsync(x => x.UserId == userId && x.Status);
+            var basket = await  _context.Basket
+                .FirstOrDefaultAsync(x => x.UserId == userId && x.Status);
+            
             if (basket == null)
             {
                 basket = new Basket
@@ -47,6 +49,7 @@ namespace GreenfieldLocal.Controllers
             var basketProducts = await _context.BasketProducts
                 .Where(x => x.BasketId == basket.BasketId)
                 .Include(x => x.Basket)
+                .Include(x => x.Products)
                 .ToListAsync();
 
             decimal subtotal = 0m;
