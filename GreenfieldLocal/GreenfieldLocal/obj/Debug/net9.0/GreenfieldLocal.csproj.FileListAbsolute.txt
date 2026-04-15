@@ -412,3 +412,17 @@ C:\Users\Digi-T-Y2-5\source\repos\izwork\Task2Exam\GreenfieldLocal\GreenfieldLoc
 C:\Users\Digi-T-Y2-5\source\repos\izwork\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.pdb
 C:\Users\Digi-T-Y2-5\source\repos\izwork\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.genruntimeconfig.cache
 C:\Users\Digi-T-Y2-5\source\repos\izwork\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\ref\GreenfieldLocal.dll
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.csproj.AssemblyReference.cache
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.AssemblyInfoInputs.cache
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.AssemblyInfo.cs
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.csproj.CoreCompileInputs.cache
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.RazorAssemblyInfo.cache
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.RazorAssemblyInfo.cs
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.sourcelink.json
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.dll
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\refint\GreenfieldLocal.dll
+C:\Users\baldw\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\obj\Debug\net9.0\GreenfieldLocal.pdb
