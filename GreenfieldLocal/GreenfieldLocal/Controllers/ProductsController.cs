@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using GreenfieldLocal.Data;
 using GreenfieldLocal.Models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GreenfieldLocal.Controllers
 {
@@ -170,6 +172,12 @@ namespace GreenfieldLocal.Controllers
             {
                 return NotFound();
             }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get the current logged in user's Id.
+            var supplier = await _context.Suppliers.FirstOrDefaultAsync(x => x.UserId == userId); // Find the supplier associated with the userId.
+            if (supplier == null || products.ProductsId != supplier.SuppliersId)
+            {
+                return Unauthorized();
+            }
 
             return View(products);
         }
@@ -177,6 +185,7 @@ namespace GreenfieldLocal.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Producer, Admin, Developer")] // Only authorize the delete function for the listed roles.
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var products = await _context.Products.FindAsync(id);

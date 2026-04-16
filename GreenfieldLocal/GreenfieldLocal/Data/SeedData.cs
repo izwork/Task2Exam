@@ -13,7 +13,7 @@ namespace GreenfieldLocal.Data
             string[] roleNames = { "Admin", "Supplier", "Standard", "Developer" };
             foreach (string roleName in roleNames)
             {
-                var roleExists = await roleManager.RoleExistsAsync(roleName);
+                var roleExists = await roleManager.RoleExistsAsync(roleName); // Check if the role already exists.
                 if (!roleExists)
                 {
                     var role = new IdentityRole(roleName);
