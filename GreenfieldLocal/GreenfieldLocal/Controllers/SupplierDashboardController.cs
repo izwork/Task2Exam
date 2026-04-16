@@ -14,7 +14,7 @@ namespace GreenfieldLocal.Controllers
         {
             _context = context;
         }
-        public async IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 

@@ -44,6 +44,10 @@ else
     </table>   
 }
 
+<p>
+    <a asp-controller="Products" asp-action="Index">View All of Your Products</a>
+</p>
+
 <h2>Recent Orders</h2>
 
 @if (ViewBag.RecentOrders == null || ((List<GreenfieldLocal.Models.Orders>)ViewBag.RecentOrders).Count == 0)
@@ -74,4 +78,8 @@ else
                 }
         </tbody>
     </table>
+
+    <p> 
+        <a asp-controller="Orders" asp-action="Index">View All of Your Orders</a>
+    </p>
 }

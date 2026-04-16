@@ -49,9 +49,14 @@
                     @Html.DisplayFor(modelItem => item.Suppliers.SuppliersId)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.ProductsId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a>
+                    <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a>
+
+                    @if (User.IsInRole("Supplier"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.ProductsId">Edit</a> 
+                        <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a>
+                    }
+
                     <form asp-controller="BasketProducts" asp-action="Create" method="post">
                         <input type="hidden" name="ProductsId" value="@item.ProductsId" />
 
@@ -68,7 +73,7 @@
                             </button>
                         }
                     </form>
-            </td>
+                </td>
         </tr>
 }
     </tbody>

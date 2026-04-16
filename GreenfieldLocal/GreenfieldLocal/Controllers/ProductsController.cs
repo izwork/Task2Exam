@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GreenfieldLocal.Data;
 using GreenfieldLocal.Models;
+using System.Security.Claims;
 
 namespace GreenfieldLocal.Controllers
 {
@@ -22,8 +23,30 @@ namespace GreenfieldLocal.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Products.Include(p => p.Suppliers);
-            return View(await applicationDbContext.ToListAsync());
+            if (User.IsInRole("Supplier"))
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                if (userId == null)
+                {
+                    return Unauthorized();
+                }
+
+                var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId);
+
+                if (supplier == null)
+                {
+                    return NotFound();
+                }
+
+                var SupplierProducts = await _context.Products.Where(p => p.SuppliersId == supplier.SuppliersId).Include(p => p.Suppliers).ToListAsync();
+                return View(SupplierProducts);
+            }
+            else
+            {
+                var allProducts = await _context.Products.Include(p => p.Suppliers).ToListAsync();
+                return View(allProducts);
+            }
         }
 
         // GET: Products/Details/5
@@ -82,7 +105,7 @@ namespace GreenfieldLocal.Controllers
             {
                 return NotFound();
             }
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);
+
             return View(products);
         }
 
@@ -91,12 +114,22 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductsId,SuppliersId,ProductName,Stock,Price,ImagePath")] Products products)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductsId,ProductName,Stock,Price,ImagePath")] Products products)
         {
-            if (id != products.ProductsId)
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId);
+            if (supplier == null)
             {
                 return NotFound();
             }
+
+            products.SuppliersId = supplier.SuppliersId;
+            ModelState.Remove("SuppliersId");
 
             if (ModelState.IsValid)
             {
@@ -118,13 +151,13 @@ namespace GreenfieldLocal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);
             return View(products);
         }
 
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();
