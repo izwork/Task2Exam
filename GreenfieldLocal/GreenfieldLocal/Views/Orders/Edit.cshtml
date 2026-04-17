@@ -40,8 +40,16 @@
             </div>
             <div class="form-group">
                 <label asp-for="OrderTrackingStatus" class="control-label"></label>
-                <input asp-for="OrderTrackingStatus" class="form-control" />
-                <span asp-validation-for="OrderTrackingStatus" class="text-danger"></span>
+
+                <select asp-for="OrderTrackingStatus" class="form-control">
+                    <option value="">-- Select Status--</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Processing">Processing</option>
+                    <option value="Delivered">Delivered</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+
+                <span asp-validation-for ="OrderTrackingStatus" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CollectionDate" class="control-label"></label>

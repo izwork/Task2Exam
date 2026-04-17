@@ -13,8 +13,8 @@
 
     <input type="hidden" name="basketId" value="@ViewBag.BasketId" />
 
-    <div style="margin-borrom:20px;">
-        <label style="font:bold; display:block; margin-bottom:10px;">Order Method</label>
+    <div style="margin-bottom:20px;">
+        <label style="font-weight:bold; display:block; margin-bottom:10px;">Order Method</label>
 
         <div>
             <input asp-for="Delivery" id="deliveryCheck" />
@@ -55,6 +55,7 @@
             Back to Basket
         </a>
     </div>
+
 </form>
 
 <script>
@@ -75,6 +76,7 @@
     const collectionDateGroup = document.getElementById("collectionDateGroup");
 
     function updateForm() {
+
         deliveryTypeGroup.style.display = "none";
         collectionDateGroup.style.display = "none";
 

@@ -7,6 +7,6 @@
         public DateTime BasketCreatedAt { get; set; } = DateTime.UtcNow;
         public string UserId { get; set; } // Links each basket to a user. 
 
-        public ICollection<BasketProducts>?BasketProducts { get; set; }
+        public ICollection<BasketProducts>? BasketProducts { get; set; }
     }
 }

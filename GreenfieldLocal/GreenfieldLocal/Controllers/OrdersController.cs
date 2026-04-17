@@ -33,18 +33,28 @@ namespace GreenfieldLocal.Controllers
 
             if (User.IsInRole("Admin"))
             {
-                var allOrders = await _context.Orders.Include(o => o.OrderProducts).ThenInclude(op => op.Products).ToListAsync();
+                var allOrders = await _context.Orders.Include(o => o.OrderProducts)
+                    .ThenInclude(op => op.Products)
+                    .ToListAsync();
                 return View(allOrders);
             }
             else if (User.IsInRole("Supplier"))
             {
-                var supplierProducts = await _context.Products.Where(p => p.Suppliers.UserId == userId).Select(p => p.ProductsId).ToListAsync(); // Find all supplier products.
-                var supplierOrders = await _context.OrderProducts.Where(op => supplierProducts.Contains(op.ProductsId)).Include(op => op.Orders).Include(op => op.Orders).Include(op => op.Products).ToListAsync(); // Use the supplier products to find supplier orders.
+                var supplierProducts = await _context.Products.Where(p => p.Suppliers.UserId == userId)
+                    .Select(p => p.ProductsId)
+                    .ToListAsync(); // Find all supplier products.
+                var supplierOrders = await _context.OrderProducts.Where(op => supplierProducts.Contains(op.ProductsId))
+                    .Include(op => op.Orders)
+                    .Include(op => op.Products)
+                    .ToListAsync(); // Use the supplier products to find supplier orders.
                 return View(supplierOrders.Select(op => op.Orders).Distinct().ToList());
             }
             else
             {
-                var userOrders = await _context.Orders.Where(o => o.UserId == userId).Include(o => o.OrderProducts).ThenInclude(op => op.Products).ToListAsync();
+                var userOrders = await _context.Orders.Where(o => o.UserId == userId)
+                    .Include(o => o.OrderProducts)
+                    .ThenInclude(op => op.Products)
+                    .ToListAsync();
                 return View(userOrders);
             }
         }
@@ -93,7 +103,7 @@ namespace GreenfieldLocal.Controllers
                 return View(orders);
             }
 
-            //Assign values
+            // Assign values.
             orders.UserId = userId;
             ModelState.Remove("UserId");
 
@@ -111,7 +121,7 @@ namespace GreenfieldLocal.Controllers
                 return NotFound();
             }
 
-            // Get basket products
+            // Get basket products.
             var basketProducts = await _context.BasketProducts
                 .Where(x => x.BasketId == basketId)
                 .Include(x => x.Products)
@@ -149,7 +159,7 @@ namespace GreenfieldLocal.Controllers
             // Delivery and collection validation
             if (!orders.Collection && !orders.Delivery)
             {
-                ModelState.AddModelError("Delivery", "Must choose Delivery or Collection.");
+                ModelState.AddModelError("Delivery", "Must choose Collection or Delivery.");
             }
 
             if (orders.Collection)
@@ -164,7 +174,7 @@ namespace GreenfieldLocal.Controllers
                 { 
                     var earliestDate = DateOnly.FromDateTime(DateTime.Today.AddDays(2));
 
-                    if (orders.CollectionDate < earliestDate)
+                    if (orders.CollectionDate.Value < earliestDate)
                     {
                         ModelState.AddModelError("CollectionDate", "Collection date must be at least 2 days from today.");
                     }

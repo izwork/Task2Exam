@@ -22,6 +22,12 @@ namespace GreenfieldLocal.Controllers
             _context = context;
         }
 
+        public async Task<IActionResult> AvailableProducts()
+        {
+            var products = await _context.Products.Where(p => p.Stock > 0).ToListAsync();
+            return View("Index", products);
+        }
+
         // GET: Products
         public async Task<IActionResult> Index()
         {

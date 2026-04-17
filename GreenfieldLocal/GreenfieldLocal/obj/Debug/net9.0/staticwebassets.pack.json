@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GreenfieldLocal.yfhvw15xdy.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\orange.png",
       "PackagePath": "staticwebassets\\images\\orange.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\js\\Accessibility.js",
+      "PackagePath": "staticwebassets\\js\\Accessibility.js"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\js\\site.js",

@@ -73,7 +73,10 @@ else
                 </div>
             }
             <div>
-                <a asp-controller="Orders" asp-action="Create" asp-route-basketId="@basketId" class="btn btn-primary w-100 mb-2">
+                <a asp-controller="Orders" 
+                   asp-action="Create" 
+                   asp-route-basketId="@basketId" 
+                   class="btn btn-primary w-100 mb-2">
                     Proceed to Checkout
                 </a>
                 <a asp-controller="Products" asp-action="Index">
