@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y3G/twNr3yxmkbaeUv6Boe2vT0ZF2MUTFk0paY3Kj9s=",
+  "Hash": "1QUsUOlJpQeM3nKPuxXBeEQpXSc3FoiWB+DjN7yWzIE=",
   "Source": "GreenfieldLocal",
   "BasePath": "_content/GreenfieldLocal",
   "Mode": "Default",
@@ -1760,12 +1760,12 @@
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-2m26bmzvuo.gz",
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-o6qmz1xomo.gz",
       "SourceId": "GreenfieldLocal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GreenfieldLocal",
-      "RelativePath": "css/StyleSheet#[.{fingerprint=2m26bmzvuo}]?.css.gz",
+      "RelativePath": "css/StyleSheet#[.{fingerprint=o6qmz1xomo}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1774,8 +1774,8 @@
       "RelatedAsset": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\StyleSheet.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1oje38yd4x",
-      "Integrity": "70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk=",
+      "Fingerprint": "fzsschfjnm",
+      "Integrity": "u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\StyleSheet.css"
@@ -2810,12 +2810,12 @@
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-5\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.0\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-popt8hx8lq.gz",
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-nzitymlfdn.gz",
       "SourceId": "GreenfieldLocal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GreenfieldLocal",
-      "RelativePath": "css/site#[.{fingerprint=popt8hx8lq}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=nzitymlfdn}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2824,8 +2824,8 @@
       "RelatedAsset": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ns2x6jv7fq",
-      "Integrity": "mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA=",
+      "Fingerprint": "x1eur02oae",
+      "Integrity": "pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\site.css"
@@ -4084,8 +4084,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "popt8hx8lq",
-      "Integrity": "SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0=",
+      "Fingerprint": "nzitymlfdn",
+      "Integrity": "Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -4105,8 +4105,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2m26bmzvuo",
-      "Integrity": "ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE=",
+      "Fingerprint": "o6qmz1xomo",
+      "Integrity": "8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
@@ -4196,6 +4196,69 @@
       "OriginalItemSpec": "wwwroot\\images\\bread.png"
     },
     {
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\dark-mode.png",
+      "SourceId": "GreenfieldLocal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\",
+      "BasePath": "_content/GreenfieldLocal",
+      "RelativePath": "images/dark-mode#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cgoucshwqr",
+      "Integrity": "tJwuinW13cjBEfp+XmSiKXDaJoJJ6NQGtTPc8rak0hg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dark-mode.png"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\high-contrast.png",
+      "SourceId": "GreenfieldLocal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\",
+      "BasePath": "_content/GreenfieldLocal",
+      "RelativePath": "images/high-contrast#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g8zv4ek3t9",
+      "Integrity": "IEA7WNbePIRIwTAkxOyQVSduzn7sJ4tZcDV+HN8V5EM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\high-contrast.png"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\image-placeholder.png",
+      "SourceId": "GreenfieldLocal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\",
+      "BasePath": "_content/GreenfieldLocal",
+      "RelativePath": "images/image-placeholder#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9kh0ytsfuo",
+      "Integrity": "FzHKlHNTqwOzqlxea3YqWWAdoyTa5yZKC7DjF5RJX90=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\image-placeholder.png"
+    },
+    {
       "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\orange.png",
       "SourceId": "GreenfieldLocal",
       "SourceType": "Discovered",
@@ -4215,6 +4278,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\orange.png"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\speak-text.png",
+      "SourceId": "GreenfieldLocal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\",
+      "BasePath": "_content/GreenfieldLocal",
+      "RelativePath": "images/speak-text#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9glnynzyyk",
+      "Integrity": "p2U9c88iWdXWaKGq2ZrGyw4fjsmkPl8vtqGTcR6eDNk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\speak-text.png"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\text-adjust.png",
+      "SourceId": "GreenfieldLocal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\",
+      "BasePath": "_content/GreenfieldLocal",
+      "RelativePath": "images/text-adjust#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39hhh0ib9a",
+      "Integrity": "lwK9lR3Bm6Au1ShQ3d0kOoSYku91MztO2rFU6wl/ciE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\text-adjust.png"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\text-adjust-up.png",
+      "SourceId": "GreenfieldLocal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\",
+      "BasePath": "_content/GreenfieldLocal",
+      "RelativePath": "images/text-adjust-up#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tgtp8c6j0c",
+      "Integrity": "k8ZnJa24W2a526NkeyXviDIw4QkUufdhD/wdOkYniTo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\text-adjust-up.png"
     },
     {
       "Identity": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\js\\Accessibility.js",
@@ -5559,12 +5685,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-popt8hx8lq.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-nzitymlfdn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002150537634"
+          "Quality": "0.000860585198"
         }
       ],
       "ResponseHeaders": [
@@ -5574,15 +5700,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "1161"
         },
         {
           "Name": "ETag",
-          "Value": "\"mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA=\""
+          "Value": "\"pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 09:14:26 GMT"
+          "Value": "Mon, 20 Apr 2026 15:05:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5602,13 +5728,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0=\""
+          "Value": "W/\"Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0="
+          "Value": "sha256-Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ="
         }
       ]
     },
@@ -5623,7 +5749,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1113"
+          "Value": "3627"
         },
         {
           "Name": "Content-Type",
@@ -5631,11 +5757,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0=\""
+          "Value": "\"Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 09:14:26 GMT"
+          "Value": "Mon, 20 Apr 2026 15:05:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5645,13 +5771,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0="
+          "Value": "sha256-Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-popt8hx8lq.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-nzitymlfdn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5660,7 +5786,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "1161"
         },
         {
           "Name": "Content-Type",
@@ -5668,11 +5794,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA=\""
+          "Value": "\"pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 09:14:26 GMT"
+          "Value": "Mon, 20 Apr 2026 15:05:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5690,18 +5816,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA="
+          "Value": "sha256-pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M="
         }
       ]
     },
     {
-      "Route": "css/site.popt8hx8lq.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-popt8hx8lq.gz",
+      "Route": "css/site.nzitymlfdn.css",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-nzitymlfdn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002150537634"
+          "Quality": "0.000860585198"
         }
       ],
       "ResponseHeaders": [
@@ -5711,15 +5837,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "1161"
         },
         {
           "Name": "ETag",
-          "Value": "\"mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA=\""
+          "Value": "\"pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 09:14:26 GMT"
+          "Value": "Mon, 20 Apr 2026 15:05:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5739,13 +5865,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0=\""
+          "Value": "W/\"Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "popt8hx8lq"
+          "Value": "nzitymlfdn"
         },
         {
           "Name": "label",
@@ -5753,12 +5879,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0="
+          "Value": "sha256-Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ="
         }
       ]
     },
     {
-      "Route": "css/site.popt8hx8lq.css",
+      "Route": "css/site.nzitymlfdn.css",
       "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5768,7 +5894,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1113"
+          "Value": "3627"
         },
         {
           "Name": "Content-Type",
@@ -5776,11 +5902,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0=\""
+          "Value": "\"Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 09:14:26 GMT"
+          "Value": "Mon, 20 Apr 2026 15:05:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5790,7 +5916,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "popt8hx8lq"
+          "Value": "nzitymlfdn"
         },
         {
           "Name": "label",
@@ -5798,13 +5924,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SSNnute0gippSC+A7JWpDYZlnItkEhUVbB0YbFKLqi0="
+          "Value": "sha256-Y4+R148OtX43Z0ELF2IfQr7RCG7PhMqUmuAgFzNleuQ="
         }
       ]
     },
     {
-      "Route": "css/site.popt8hx8lq.css.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-popt8hx8lq.gz",
+      "Route": "css/site.nzitymlfdn.css.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\kul7q4t45k-nzitymlfdn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5813,7 +5939,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "1161"
         },
         {
           "Name": "Content-Type",
@@ -5821,11 +5947,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA=\""
+          "Value": "\"pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 09:14:26 GMT"
+          "Value": "Mon, 20 Apr 2026 15:05:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5843,7 +5969,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "popt8hx8lq"
+          "Value": "nzitymlfdn"
         },
         {
           "Name": "label",
@@ -5851,18 +5977,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mdEW2GlIS3un49y1GYTAcHYvSw2emsfQ5p+Qj9z8ixA="
+          "Value": "sha256-pb3Puxh7zu5uW2HRRyHwY8NWzDN1yVop9T0p/LY+L2M="
         }
       ]
     },
     {
-      "Route": "css/StyleSheet.2m26bmzvuo.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-2m26bmzvuo.gz",
+      "Route": "css/StyleSheet.css",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-o6qmz1xomo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.010000000000"
+          "Quality": "0.038461538462"
         }
       ],
       "ResponseHeaders": [
@@ -5872,19 +5998,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "99"
+          "Value": "25"
         },
         {
           "Name": "ETag",
-          "Value": "\"70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk=\""
+          "Value": "\"u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 10:48:58 GMT"
+          "Value": "Mon, 20 Apr 2026 12:10:05 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5900,26 +6026,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE=\""
+          "Value": "W/\"8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "2m26bmzvuo"
-        },
-        {
-          "Name": "label",
-          "Value": "css/StyleSheet.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE="
+          "Value": "sha256-8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU="
         }
       ]
     },
     {
-      "Route": "css/StyleSheet.2m26bmzvuo.css",
+      "Route": "css/StyleSheet.css",
       "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\StyleSheet.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5929,7 +6047,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "122"
+          "Value": "5"
         },
         {
           "Name": "Content-Type",
@@ -5937,11 +6055,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE=\""
+          "Value": "\"8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 10:48:58 GMT"
+          "Value": "Mon, 20 Apr 2026 12:10:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU="
+        }
+      ]
+    },
+    {
+      "Route": "css/StyleSheet.css.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-o6qmz1xomo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 12:10:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA="
+        }
+      ]
+    },
+    {
+      "Route": "css/StyleSheet.o6qmz1xomo.css",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-o6qmz1xomo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.038461538462"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 12:10:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6qmz1xomo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/StyleSheet.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU="
+        }
+      ]
+    },
+    {
+      "Route": "css/StyleSheet.o6qmz1xomo.css",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\StyleSheet.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 12:10:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5951,7 +6214,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2m26bmzvuo"
+          "Value": "o6qmz1xomo"
         },
         {
           "Name": "label",
@@ -5959,13 +6222,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE="
+          "Value": "sha256-8Bo3TpyB49uJs6QpQMTWpUR2hJhqEpbkK/E/GW7tYpU="
         }
       ]
     },
     {
-      "Route": "css/StyleSheet.2m26bmzvuo.css.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-2m26bmzvuo.gz",
+      "Route": "css/StyleSheet.o6qmz1xomo.css.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-o6qmz1xomo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5974,7 +6237,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "99"
+          "Value": "25"
         },
         {
           "Name": "Content-Type",
@@ -5982,11 +6245,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk=\""
+          "Value": "\"u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 10:48:58 GMT"
+          "Value": "Mon, 20 Apr 2026 12:10:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6004,7 +6267,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2m26bmzvuo"
+          "Value": "o6qmz1xomo"
         },
         {
           "Name": "label",
@@ -6012,144 +6275,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk="
-        }
-      ]
-    },
-    {
-      "Route": "css/StyleSheet.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-2m26bmzvuo.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.010000000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "99"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 10:48:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE="
-        }
-      ]
-    },
-    {
-      "Route": "css/StyleSheet.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\css\\StyleSheet.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 10:48:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ukXfKsUxbe9AACVKRDp4cXXDOBlf/6doSg1qOl2RgoE="
-        }
-      ]
-    },
-    {
-      "Route": "css/StyleSheet.css.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\obj\\Debug\\net9.0\\compressed\\85o618wp03-2m26bmzvuo.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "99"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 10:48:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-70HSgPd1aH/7CSDQS2vufQQ26yMM3wcCnlgIowSy1Hk="
+          "Value": "sha256-u6GMxEVWfn9pfXD7FsE8gmw21u9rOaD4/fug8ObgfcA="
         }
       ]
     },
@@ -15862,6 +15988,252 @@
       ]
     },
     {
+      "Route": "images/dark-mode.cgoucshwqr.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\dark-mode.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJwuinW13cjBEfp+XmSiKXDaJoJJ6NQGtTPc8rak0hg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cgoucshwqr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/dark-mode.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tJwuinW13cjBEfp+XmSiKXDaJoJJ6NQGtTPc8rak0hg="
+        }
+      ]
+    },
+    {
+      "Route": "images/dark-mode.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\dark-mode.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJwuinW13cjBEfp+XmSiKXDaJoJJ6NQGtTPc8rak0hg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:30:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tJwuinW13cjBEfp+XmSiKXDaJoJJ6NQGtTPc8rak0hg="
+        }
+      ]
+    },
+    {
+      "Route": "images/high-contrast.g8zv4ek3t9.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\high-contrast.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEA7WNbePIRIwTAkxOyQVSduzn7sJ4tZcDV+HN8V5EM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:29:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g8zv4ek3t9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/high-contrast.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEA7WNbePIRIwTAkxOyQVSduzn7sJ4tZcDV+HN8V5EM="
+        }
+      ]
+    },
+    {
+      "Route": "images/high-contrast.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\high-contrast.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEA7WNbePIRIwTAkxOyQVSduzn7sJ4tZcDV+HN8V5EM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:29:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEA7WNbePIRIwTAkxOyQVSduzn7sJ4tZcDV+HN8V5EM="
+        }
+      ]
+    },
+    {
+      "Route": "images/image-placeholder.9kh0ytsfuo.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\image-placeholder.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22852"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzHKlHNTqwOzqlxea3YqWWAdoyTa5yZKC7DjF5RJX90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 12:50:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9kh0ytsfuo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/image-placeholder.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzHKlHNTqwOzqlxea3YqWWAdoyTa5yZKC7DjF5RJX90="
+        }
+      ]
+    },
+    {
+      "Route": "images/image-placeholder.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\image-placeholder.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22852"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzHKlHNTqwOzqlxea3YqWWAdoyTa5yZKC7DjF5RJX90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 12:50:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzHKlHNTqwOzqlxea3YqWWAdoyTa5yZKC7DjF5RJX90="
+        }
+      ]
+    },
+    {
       "Route": "images/orange.2mzwmkq5d2.png",
       "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\orange.png",
       "Selectors": [],
@@ -15940,6 +16312,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-tv2LYS+1rEzHWyiJN2JuOJZkfrjUBb89W2GDgkuIeoM="
+        }
+      ]
+    },
+    {
+      "Route": "images/speak-text.9glnynzyyk.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\speak-text.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p2U9c88iWdXWaKGq2ZrGyw4fjsmkPl8vtqGTcR6eDNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:29:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9glnynzyyk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/speak-text.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p2U9c88iWdXWaKGq2ZrGyw4fjsmkPl8vtqGTcR6eDNk="
+        }
+      ]
+    },
+    {
+      "Route": "images/speak-text.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\speak-text.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p2U9c88iWdXWaKGq2ZrGyw4fjsmkPl8vtqGTcR6eDNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:29:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p2U9c88iWdXWaKGq2ZrGyw4fjsmkPl8vtqGTcR6eDNk="
+        }
+      ]
+    },
+    {
+      "Route": "images/text-adjust.39hhh0ib9a.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\text-adjust.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lwK9lR3Bm6Au1ShQ3d0kOoSYku91MztO2rFU6wl/ciE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:29:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39hhh0ib9a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/text-adjust.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lwK9lR3Bm6Au1ShQ3d0kOoSYku91MztO2rFU6wl/ciE="
+        }
+      ]
+    },
+    {
+      "Route": "images/text-adjust.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\text-adjust.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lwK9lR3Bm6Au1ShQ3d0kOoSYku91MztO2rFU6wl/ciE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:29:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lwK9lR3Bm6Au1ShQ3d0kOoSYku91MztO2rFU6wl/ciE="
+        }
+      ]
+    },
+    {
+      "Route": "images/text-adjust-up.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\text-adjust-up.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k8ZnJa24W2a526NkeyXviDIw4QkUufdhD/wdOkYniTo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:32:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k8ZnJa24W2a526NkeyXviDIw4QkUufdhD/wdOkYniTo="
+        }
+      ]
+    },
+    {
+      "Route": "images/text-adjust-up.tgtp8c6j0c.png",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-5\\source\\repos\\izwork\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\text-adjust-up.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k8ZnJa24W2a526NkeyXviDIw4QkUufdhD/wdOkYniTo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 11:32:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tgtp8c6j0c"
+        },
+        {
+          "Name": "label",
+          "Value": "images/text-adjust-up.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k8ZnJa24W2a526NkeyXviDIw4QkUufdhD/wdOkYniTo="
         }
       ]
     },

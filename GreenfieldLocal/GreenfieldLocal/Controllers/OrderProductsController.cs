@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GreenfieldLocal.Data;
 using GreenfieldLocal.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GreenfieldLocal.Controllers
 {
@@ -59,6 +60,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Create([Bind("OrderProductsId,ProductsId,OrdersId,Quantity")] OrderProducts orderProducts)
         {
             if (ModelState.IsValid)
@@ -95,6 +97,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Edit(int id, [Bind("OrderProductsId,ProductsId,OrdersId,Quantity")] OrderProducts orderProducts)
         {
             if (id != orderProducts.OrderProductsId)
@@ -150,6 +153,7 @@ namespace GreenfieldLocal.Controllers
         // POST: OrderProducts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var orderProducts = await _context.OrderProducts.FindAsync(id);

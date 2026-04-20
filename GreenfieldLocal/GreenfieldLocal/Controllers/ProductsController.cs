@@ -22,12 +22,6 @@ namespace GreenfieldLocal.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> AvailableProducts()
-        {
-            var products = await _context.Products.Where(p => p.Stock > 0).ToListAsync();
-            return View("Index", products);
-        }
-
         // GET: Products
         public async Task<IActionResult> Index()
         {
@@ -88,6 +82,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Admin, Developer")]
         public async Task<IActionResult> Create([Bind("ProductsId,SuppliersId,ProductName,Stock,Price,ImagePath")] Products products)
         {
             if (ModelState.IsValid)
@@ -191,7 +186,7 @@ namespace GreenfieldLocal.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Producer, Admin, Developer")] // Only authorize the delete function for the listed roles.
+        [Authorize(Roles = "Supplier, Admin, Developer")] // Only authorize the delete function for the listed roles.
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var products = await _context.Products.FindAsync(id);

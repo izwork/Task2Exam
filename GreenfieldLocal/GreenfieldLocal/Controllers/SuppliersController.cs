@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GreenfieldLocal.Data;
 using GreenfieldLocal.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GreenfieldLocal.Controllers
 {
@@ -54,6 +55,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Developer")]
         public async Task<IActionResult> Create([Bind("SuppliersId,UserId,SupplierName,SupplierEmail,SupplierInformation")] Suppliers suppliers)
         {
             if (ModelState.IsValid)
@@ -86,6 +88,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize (Roles = "Admin, Developer")]
         public async Task<IActionResult> Edit(int id, [Bind("SuppliersId,UserId,SupplierName,SupplierEmail,SupplierInformation")] Suppliers suppliers)
         {
             if (id != suppliers.SuppliersId)
@@ -137,6 +140,7 @@ namespace GreenfieldLocal.Controllers
         // POST: Suppliers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Developer")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var suppliers = await _context.Suppliers.FindAsync(id);

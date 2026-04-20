@@ -16,6 +16,23 @@
     <script src="~/js/Accessibility.js"></script>
 </head>
 <body>
+    <div id="accessibility-sidebar">
+        <button onclick="toggleDarkMode()" title="Toggle Dark Mode">
+            <img src="~/images/dark-mode.png" alt="Toggle Dark Mode" />
+        </button>
+        <button onclick="changeFontSize('increase')" title="Increase Font Size"
+            <img src="~/images/text-adjust-up.png" alt="Increase Font Size" />
+        </button>
+        <button onclick="changeFontSize('decrease')" title="Decrease Font Size">
+            <img src="~/images/text-adjust.png" alt="Decrease Font Size" />
+        </button>
+        <button onclick="toggleHighContrast()" title="High Contrast Mode">
+            <img src="~/images/high-contrast.png" alt="High Contrast Mode" />
+        </button>
+        <button onclick="speakText()" title="Read Aloud">
+            <img src="~/images/speak-text.png" alt="Read Aloud" />
+        </button>
+    </div>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -50,15 +67,6 @@
             </div>
         </nav>
     </header>
-    <div id="accessibility-menu">
-        <div id="accessibility-options">
-            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-            <button onclick="changeFontSize('increase')">Increase Font Size</button>
-            <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
-            <button onclick="toggleHighContrast()">High Contrast Mode</button>
-            <button onclick="speakText()">Read Aloud</button>
-        </div>
-    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

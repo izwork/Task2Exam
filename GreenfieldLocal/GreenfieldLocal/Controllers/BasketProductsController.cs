@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using GreenfieldLocal.Data;
 using GreenfieldLocal.Models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GreenfieldLocal.Controllers
 {
@@ -58,6 +59,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Create(int ProductsId)
         {
             var product = await _context.Products.FirstOrDefaultAsync(x => x.ProductsId == ProductsId);
@@ -135,6 +137,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Edit(int id, [Bind("BasketProductsId,BasketId,ProductId,Quantity")] BasketProducts basketProducts)
         {
             if (id != basketProducts.BasketProductsId)
@@ -188,6 +191,7 @@ namespace GreenfieldLocal.Controllers
         // POST: BasketProducts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var basketProducts = await _context.BasketProducts.FindAsync(id);

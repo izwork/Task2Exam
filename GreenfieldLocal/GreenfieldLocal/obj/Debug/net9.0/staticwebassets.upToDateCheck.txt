@@ -68,7 +68,13 @@ wwwroot\favicon.ico
 wwwroot\images\apple.png
 wwwroot\images\banana.png
 wwwroot\images\bread.png
+wwwroot\images\dark-mode.png
+wwwroot\images\high-contrast.png
+wwwroot\images\image-placeholder.png
 wwwroot\images\orange.png
+wwwroot\images\speak-text.png
+wwwroot\images\text-adjust.png
+wwwroot\images\text-adjust-up.png
 wwwroot\js\Accessibility.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

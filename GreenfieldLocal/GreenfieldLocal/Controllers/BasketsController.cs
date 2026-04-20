@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using GreenfieldLocal.Data;
 using GreenfieldLocal.Models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GreenfieldLocal.Controllers
 {
@@ -108,6 +109,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Create([Bind("BasketId,Status,BasketCreatedAt,UserId")] Basket basket)
         {
             if (ModelState.IsValid)
@@ -140,6 +142,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Edit(int id, [Bind("BasketId,Status,BasketCreatedAt,UserId")] Basket basket)
         {
             if (id != basket.BasketId)
@@ -191,6 +194,7 @@ namespace GreenfieldLocal.Controllers
         // POST: Baskets/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var basket = await _context.Basket.FindAsync(id);

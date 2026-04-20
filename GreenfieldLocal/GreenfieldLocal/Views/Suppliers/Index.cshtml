@@ -4,11 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Our Local Suppliers</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (User.IsInRole("Admin") || User.IsInRole("Developer"))
+{
+    <p>
+        <button style="background-color:#988C84; border-color:#988C84; border-radius:8px"> <a asp-action="Create">Create New</a> </button>
+    </p>
+}
+
 <table class="table">
     <thead>
         <tr>
@@ -28,25 +32,28 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SupplierName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SupplierEmail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SupplierInformation)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SuppliersId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SuppliersId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SuppliersId">Delete</a>
-            </td>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierInformation)
+                </td>
+                <td>
+                    @if (User.IsInRole("Admin") || User.IsInRole("Developer"))
+                    {
+                        <button> <a asp-action="Edit" asp-route-id="@item.SuppliersId" class="btn-lol">Edit</a> </button>
+                        <button style="background-color:#988C84; border-color:#988C84; border-radius:8px"> <a asp-action="Delete" asp-route-id="@item.SuppliersId" class="btn-lol">Delete</a> </button>
+                    }
+                    <button> <a asp-action="Details" asp-route-id="@item.SuppliersId" class="btn-lol">Details</a> </button>
+                </td>
         </tr>
 }
     </tbody>

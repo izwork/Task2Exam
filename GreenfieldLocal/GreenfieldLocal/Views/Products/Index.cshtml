@@ -6,9 +6,12 @@
 
 <h1>All Products</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (User.IsInRole("Admin") || User.IsInRole("Developer") || User.IsInRole("Supplier"))
+{
+    <p>
+        <button> <a asp-action="Create" class="btn-lol">Create New</a> </button>
+    </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -49,12 +52,12 @@
                     @Html.DisplayFor(modelItem => item.Suppliers.SuppliersId)
                 </td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a>
+                    <button> <a asp-action="Details" asp-route-id="@item.ProductsId" class="btn-lol">Details</a> </button>
 
-                    @if (User.IsInRole("Supplier"))
+                    @if (User.IsInRole("Admin") || User.IsInRole("Developer") || User.IsInRole("Supplier"))
                     {
-                        <a asp-action="Edit" asp-route-id="@item.ProductsId">Edit</a> 
-                        <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a>
+                        <button style="background-color:#988C84; border-color:#988C84; border-radius:8px"> <a asp-action="Edit" asp-route-id="@item.ProductsId" class="btn-lol">Edit</a> </button>
+                        <button style="background-color:#988C84; border-color:#988C84; border-radius:8px"> <a asp-action="Delete" asp-route-id="@item.ProductsId" class="btn-lol">Delete</a> </button>
                     }
 
                     <form asp-controller="BasketProducts" asp-action="Create" method="post">
@@ -78,10 +81,3 @@
 }
     </tbody>
 </table>
-
-<form asp-action="Index">
-    <button type="submit">See All Products</button>
-</form>
-<form asp-action="AvailableProducts">
-    <button type="submit">View In Stock</button>
-</form>
