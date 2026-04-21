@@ -188,11 +188,11 @@ namespace GreenfieldLocal.Data
                     },
                        new Products
                     {
-                        ProductName = "Bread",
+                        ProductName = "Raisin Bread",
                         Stock = 60,
                         Price = 1.20m,
                         SuppliersId = SandwellFarm.SuppliersId,
-                        ImagePath = "/images/bread.png"
+                        ImagePath = "/images/raisin-bread.png"
                     }
                 };
 

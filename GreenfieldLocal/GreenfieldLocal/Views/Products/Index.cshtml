@@ -1,83 +1,76 @@
 ﻿@model IEnumerable<GreenfieldLocal.Models.Products>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "All Products";
+    var currentPage = ViewBag.CurrentPage as int? ?? 1;
+    var totalPages = ViewBag.TotalPages as int? ?? 1;
+    var pageSize = ViewBag.PageSize as int? ?? 6;
 }
 
-<h1>All Products</h1>
+<h1>@ViewData["Title"]</h1>
 
 @if (User.IsInRole("Admin") || User.IsInRole("Developer") || User.IsInRole("Supplier"))
 {
     <p>
-        <button> <a asp-action="Create" class="btn-lol">Create New</a> </button>
+        <a asp-action="Create" class="btn btn-primary mb-3">Create New</a>
     </p>
 }
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Stock)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImagePath)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Suppliers)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model) {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Stock)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ImagePath)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Suppliers.SuppliersId)
-                </td>
-                <td>
-                    <button> <a asp-action="Details" asp-route-id="@item.ProductsId" class="btn-lol">Details</a> </button>
 
-                    @if (User.IsInRole("Admin") || User.IsInRole("Developer") || User.IsInRole("Supplier"))
-                    {
-                        <button style="background-color:#988C84; border-color:#988C84; border-radius:8px"> <a asp-action="Edit" asp-route-id="@item.ProductsId" class="btn-lol">Edit</a> </button>
-                        <button style="background-color:#988C84; border-color:#988C84; border-radius:8px"> <a asp-action="Delete" asp-route-id="@item.ProductsId" class="btn-lol">Delete</a> </button>
-                    }
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card h-100 product-card">
+                <img src="@(item.ImagePath ?? "/images/placeholder.png")" class="card-img-top" alt="@item.ProductName" />
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@item.ProductName</h5>
+                    <p class="card-text mb-1"><strong>Price:</strong> @item.Price.ToString("C")</p>
+                    <p class="card-text mb-2"><strong>Stock:</strong> @item.Stock</p>
 
-                    <form asp-controller="BasketProducts" asp-action="Create" method="post">
-                        <input type="hidden" name="ProductsId" value="@item.ProductsId" />
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a asp-action="Details" asp-route-id="@item.ProductsId" class="btn btn-outline-secondary details-link">Details</a>
 
-                        @if (item.Stock > 0)
+                        @if (User.IsInRole("Admin") || User.IsInRole("Developer") || User.IsInRole("Supplier"))
                         {
-                            <button type="submit" class="btn btn-primary w-100">
-                                Add to Basket
-                            </button>
+                            <div class="d-flex gap-2">
+                                <a asp-action="Edit" asp-route-id="@item.ProductsId" class="btn btn-sm btn-secondary flex-fill">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.ProductsId" class="btn btn-sm btn-danger flex-fill">Delete</a>
+                            </div>
                         }
-                        else
-                        {
-                            <button type="button" class="btn btn-secondary w-100" disabled>
-                                Out of Stock
-                            </button>
-                        }
-                    </form>
-                </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+                        <form asp-controller="BasketProducts" asp-action="Create" method="post" class="mt-2">
+                            <input type="hidden" name="ProductsId" value="@item.ProductsId" />
+                            @if (item.Stock > 0)
+                            {
+                                <button type="submit" class="btn btn-primary w-100">Add to Basket</button>
+                            }
+                            else
+                            {
+                                <button type="button" class="btn btn-secondary w-100" disabled>Out of Stock</button>
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<nav aria-label="Products pagination">
+    <ul class="pagination justify-content-center">
+        <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(currentPage - 1)" asp-route-pageSize="@pageSize">Previous</a>
+        </li>
+
+        @for (var p = 1; p <= totalPages; p++)
+        {
+            <li class="page-item @(p == currentPage ? "active" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@p" asp-route-pageSize="@pageSize">@p</a>
+            </li>
+        }
+
+        <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(currentPage + 1)" asp-route-pageSize="@pageSize">Next</a>
+        </li>
+    </ul>
+</nav>

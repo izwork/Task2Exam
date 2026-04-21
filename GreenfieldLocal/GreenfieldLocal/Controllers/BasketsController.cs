@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace GreenfieldLocal.Controllers
 {
+    // Add the Authorize attribute to the controller so only Standard users can access any action
+    [Authorize(Roles = "Standard")]
     public class BasketsController : Controller
     {
         private readonly ApplicationDbContext _context;

@@ -16,21 +16,48 @@
     <script src="~/js/Accessibility.js"></script>
 </head>
 <body>
-    <div id="accessibility-sidebar">
+    <!-- toggle button (always visible) -->
+    <button id="accessibility-toggle"
+            class="accessibility-toggle"
+            aria-controls="accessibility-sidebar"
+            aria-expanded="false"
+            title="Accessibility options">
+        <img src="~/images/accessibility-icon.png" alt="Accessibility" />
+    </button>
+
+    <!-- overlay shown when sidebar is open -->
+    <div id="accessibility-overlay" class="sr-only" tabindex="-1" aria-hidden="true"></div>
+
+    <div id="accessibility-sidebar" aria-hidden="true" role="region" aria-label="Accessibility tools">
         <button onclick="toggleDarkMode()" title="Toggle Dark Mode">
             <img src="~/images/dark-mode.png" alt="Toggle Dark Mode" />
+            <span class="label">Dark mode</span>
         </button>
-        <button onclick="changeFontSize('increase')" title="Increase Font Size"
-            <img src="~/images/text-adjust-up.png" alt="Increase Font Size" />
+
+        <button onclick="changeFontSize('increase')" title="Increase Font Size">
+            <img src="~/images/text-increase.png" alt="Increase Font Size" />
+            <span class="label">Increase text</span>
         </button>
+
         <button onclick="changeFontSize('decrease')" title="Decrease Font Size">
-            <img src="~/images/text-adjust.png" alt="Decrease Font Size" />
+            <img src="~/images/text-decrease.png" alt="Decrease Font Size" />
+            <span class="label">Decrease text</span>
         </button>
+
         <button onclick="toggleHighContrast()" title="High Contrast Mode">
             <img src="~/images/high-contrast.png" alt="High Contrast Mode" />
+            <span class="label">High contrast</span>
         </button>
+
         <button onclick="speakText()" title="Read Aloud">
             <img src="~/images/speak-text.png" alt="Read Aloud" />
+            <span class="label">Read aloud</span>
+        </button>
+
+        <!-- RESET button -->
+        <button onclick="resetAccessibility()" title="Reset accessibility settings" class="reset-button">
+            <img src="~/images/reset.png" alt="Reset settings" />
+            <span class="label">Reset</span>
         </button>
     </div>
     <header>
@@ -52,9 +79,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Baskets" asp-action="Index">View Basket</a>
-                        </li>
+                        @if (User.IsInRole("Standard"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Baskets" asp-action="Index">View Basket</a>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">View Orders</a>
                         </li>

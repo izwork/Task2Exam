@@ -59,7 +59,6 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
         public async Task<IActionResult> Create(int ProductsId)
         {
             var product = await _context.Products.FirstOrDefaultAsync(x => x.ProductsId == ProductsId);
