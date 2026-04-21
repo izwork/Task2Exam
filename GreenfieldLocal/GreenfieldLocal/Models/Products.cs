@@ -8,7 +8,7 @@
         public int Stock { get; set; }
         public decimal Price { get; set; }
         public string? ImagePath { get; set; }
-        public Suppliers Suppliers { get; set; } // Navigation property for suppliers. 
+        public Suppliers? Suppliers { get; set; } // Navigation property for suppliers. 
 
         public ICollection<OrderProducts>? OrderProducts { get; set; }
         public ICollection<BasketProducts>? BasketProducts { get; set; }

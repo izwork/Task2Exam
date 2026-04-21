@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\css\StyleSheet.css
 wwwroot\favicon.ico
 wwwroot\images\accessibility-icon.png
@@ -80,10 +81,8 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
-C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\css\StyleSheet.css
-C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\favicon.ico
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\js\Accessibility.js
+C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\favicon.ico
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\js\site.js
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -144,4 +143,5 @@ C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLoc
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\css\StyleSheet.css
 C:\Users\Dylan\OneDrive\Documents\GitHub\Task2Exam\GreenfieldLocal\GreenfieldLocal\wwwroot\css\site.css
