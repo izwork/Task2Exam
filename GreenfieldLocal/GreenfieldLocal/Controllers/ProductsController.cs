@@ -73,7 +73,8 @@ namespace GreenfieldLocal.Controllers
         // GET: Products/Create
         public IActionResult Create()
         {
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId");
+            // Display supplier names in the dropdown while keeping SuppliersId as the underlying value
+            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SupplierName");
             return View();
         }
 
@@ -91,7 +92,7 @@ namespace GreenfieldLocal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);
+            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SupplierName", products.SuppliersId);
             return View(products);
         }
 

@@ -1,42 +1,38 @@
 ﻿@model GreenfieldLocal.Models.Suppliers
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model?.SupplierName ?? "Supplier Details";
 }
 
-<h1>Details</h1>
+@if (Model == null)
+{
+    <div class="alert alert-warning">Supplier not found.</div>
+}
+else
+{
+    <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start">
+                <div>
+                    <h2 class="card-title mb-1">@Model.SupplierName</h2>
+                    <h6 class="card-subtitle text-muted mb-3">@Model.SupplierEmail</h6>
+                </div>
+                <div class="text-end">
+                    @if (User.IsInRole("Admin") || User.IsInRole("Developer"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@Model.SuppliersId" class="btn btn-secondary me-2">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@Model.SuppliersId" class="btn btn-danger">Delete</a>
+                    }
+                </div>
+            </div>
 
-<div>
-    <h4>Suppliers</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierEmail)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierEmail)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierInformation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierInformation)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.SuppliersId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+            <hr />
+
+            <p class="card-text">@Model.SupplierInformation</p>
+
+            <div class="mt-3">
+                <a asp-action="Index" class="btn btn-outline-primary">Back to Suppliers</a>
+            </div>
+        </div>
+    </div>
+}

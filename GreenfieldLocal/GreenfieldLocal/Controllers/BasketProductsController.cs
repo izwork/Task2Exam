@@ -140,6 +140,38 @@ namespace GreenfieldLocal.Controllers
             return RedirectToAction("Index", "Baskets");
         }
 
+        [HttpPost]
+        public IActionResult DecreaseQuantity(int id)
+        {
+            // Find the basket product by id
+            var basketProduct = _context.BasketProducts.FirstOrDefault(bp => bp.BasketProductsId == id);
+            if (basketProduct == null)
+            {
+                return NotFound();
+            }
+
+            // Decrease the quantity or remove the item if quantity would go to zero
+            if (basketProduct.Quantity > 1)
+            {
+                basketProduct.Quantity -= 1;
+                _context.SaveChanges();
+            }
+            else
+            {
+                _context.BasketProducts.Remove(basketProduct);
+                _context.SaveChanges();
+            }
+
+            // If called via AJAX, return a simple result
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return Ok();
+            }
+
+            // Otherwise, redirect back to the basket
+            return RedirectToAction("Index", "Baskets");
+        }
+
         // GET: BasketProducts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
