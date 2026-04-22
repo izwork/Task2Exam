@@ -11,7 +11,9 @@
 {
     <div class="empty-basket-card p-4 rounded">
         <div class="d-flex align-items-center gap-3">
-            <div class="empty-basket-icon"> <img src="~/images/cart-icon.png" /></div>
+            <div class="empty-basket-icon">
+                <img src="~/images/cart-icon.png" />
+            </div>
             <div>
                 <h3 class="mb-1">Your basket is empty</h3>
                 <p class="mb-2 text-muted">Looks like you haven't added any products yet.</p>
@@ -22,70 +24,87 @@
 }
 else
 {
-    <div>
-        <div>
+    <div class="row">
+        <div class="col-lg-8">
             @foreach (var item in Model)
             {
-                <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
-                    <div>
-                        <h4>@item.Products.ProductName</h4>
-                        <p>Price: £@item.Products.Price.ToString("0.00")</p>
+                <div class="basket-card mb-3 p-3 d-flex align-items-center">
+                    <img src="@(item.Products.ImagePath ?? "~/images/placeholder.png")"
+                         alt="@item.Products.ProductName"
+                         class="basket-item-img me-3" />
+                    <div class="flex-grow-1">
+                        <h5 class="mb-1">@item.Products.ProductName</h5>
+                        <div class="text-muted mb-2">Price: £@item.Products.Price.ToString("0.00")</div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="qty-display">Qty: @item.Quantity</span>
+                                    <form asp-controller="BasketProducts" asp-action="IncreaseQuantity" asp-route-id="@item.BasketProductsId" method="post" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-primary">
+                                            +
+                                        </button>
+                                    </form>
+                        </div>
+                        <div>
+                            <span class="fw-semibold">Total: £@((item.Products.Price * item.Quantity).ToString("0.00"))</span>
+                        </div>
                     </div>
-
                     <div>
-                        <p>Qty: @item.Quantity</p>
-                    </div>
-
-                    <div>
-                        <p>
-                            Total: £@((item.Products.Price * item.Quantity).ToString("0.00"))
-                        </p>
-
-                        <a asp-controller="BasketProducts" asp-action="Delete" asp-route-id="@item.BasketProductsId">
+                        <a asp-controller="BasketProducts"
+                           asp-action="Delete"
+                           asp-route-id="@item.BasketProductsId"
+                           class="btn btn-outline-danger ms-3">
                             Remove
                         </a>
                     </div>
                 </div>
             }
         </div>
-
-        <div style="border:1px solid #000; padding:15px; margin-top:20px;">
-            <h3>Order Summary</h3>
-
-            <div>
-                <span>Subtotal:</span>
-                <span>£@(((decimal)ViewBag.Subtotal).ToString("0.00"))</span>
-            </div>
-
-            <div>
-                <span>Loyalty Discount:</span>
-                <span>-£@(((decimal)ViewBag.Discount).ToString("0.00"))</span>
-            </div>
-
-            <hr />
-
-            <div>
-                <strong>Total:</strong>
-                <strong>£@(((decimal)ViewBag.Total).ToString("0.00"))</strong>
-            </div>
-
-            @if (ViewBag.Discount > 0)
-            {
-                <div>
-                    <p>Your loyalty discount has been applied.</p>
+        <div class="col-lg-4">
+            <div class="order-summary-card p-4 mb-3">
+                <h3 class="mb-3">Order Summary</h3>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Subtotal:</span>
+                    <span>£@(((decimal)ViewBag.Subtotal).ToString("0.00"))</span>
                 </div>
-            }
-            <div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Loyalty Discount:</span>
+                    <span>-£@(((decimal)ViewBag.Discount).ToString("0.00"))</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between mb-3">
+                    <strong>Total:</strong>
+                    <strong>£@(((decimal)ViewBag.Total).ToString("0.00"))</strong>
+                </div>
+                @if (ViewBag.Discount > 0)
+                {
+                    <div class="alert alert-success py-2">
+                        Your loyalty discount has been applied.
+                    </div>
+                }
                 <a asp-controller="Orders"
                    asp-action="Create"
                    asp-route-basketId="@basketId"
                    class="btn btn-primary w-100 mb-2">
                     Proceed to Checkout
                 </a>
-                <a asp-controller="Products" asp-action="Index">
+                <a asp-controller="Products"
+                   asp-action="Index"
+                   class="btn btn-continue w-100">
                     Continue Shopping
                 </a>
             </div>
         </div>
     </div>
+}
+
+@section Scripts {
+<script>
+    function increaseQuantity(basketProductId) {
+        fetch(`/BasketProducts/IncreaseQuantity/${basketProductId}`, { method: 'POST' })
+            .then(response => {
+                if (response.ok) {
+                    location.reload(); // Reload to reflect changes
+                }
+            });
+    }
+</script>
 }

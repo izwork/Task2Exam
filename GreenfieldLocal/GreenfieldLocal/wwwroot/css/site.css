@@ -163,7 +163,7 @@ footer {
 
 .product-card img {
     height: 200px;
-    object-fit: cover;
+    object-fit: scale-down;
     width: 100%;
     border-top-left-radius: 0.375rem;
     border-top-right-radius: 0.375rem;
@@ -214,7 +214,7 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.04);
 }
 
-/* Add at end of file: accessibility slideout styles */
+/* Accessibility slideout styles */
 
 .accessibility-toggle {
     position: fixed;
@@ -275,7 +275,6 @@ footer {
     align-items: center;
 }
 
-/* Visible / open state: slide into view */
 #accessibility-sidebar.open {
     transform: translateX(0);
     opacity: 1;
@@ -286,7 +285,6 @@ footer {
     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
-/* keep icon-only collapsed appearance when not open */
 #accessibility-sidebar .label {
     display: none;
 }
@@ -294,7 +292,6 @@ footer {
     display: inline-block;
 }
 
-/* keep other button styles as before */
 #accessibility-sidebar button {
     background: none;
     border: none;
@@ -371,7 +368,7 @@ footer {
     text-align: left;
 }
 
-/* Add at end of site.css: empty basket styling using site green palette */
+/* Empty basket styling */
 
 .empty-basket-card {
     background: linear-gradient(90deg, rgba(145,180,121,0.08) 0%, rgba(193,219,177,0.08) 100%);

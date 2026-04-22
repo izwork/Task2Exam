@@ -114,6 +114,32 @@ namespace GreenfieldLocal.Controllers
             return RedirectToAction("Index", "Baskets");
         }
 
+        [HttpPost]
+        public IActionResult IncreaseQuantity(int id)
+        {
+            // Find the basket product by id
+            var basketProduct = _context.BasketProducts.FirstOrDefault(bp => bp.BasketProductsId == id);
+            if (basketProduct == null)
+            {
+                return NotFound();
+            }
+
+            // Increase the quantity
+            basketProduct.Quantity += 1;
+
+            // Save changes
+            _context.SaveChanges();
+
+            // If called via AJAX, return a simple result
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return Ok();
+            }
+
+            // Otherwise, redirect back to the basket
+            return RedirectToAction("Index", "Baskets");
+        }
+
         // GET: BasketProducts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -136,7 +162,7 @@ namespace GreenfieldLocal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Supplier, Standard, Admin, Developer")]
+        [Authorize(Roles = "Standard")]
         public async Task<IActionResult> Edit(int id, [Bind("BasketProductsId,BasketId,ProductId,Quantity")] BasketProducts basketProducts)
         {
             if (id != basketProducts.BasketProductsId)
