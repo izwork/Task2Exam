@@ -2,31 +2,88 @@
     ViewData["Title"] = "Home Page";
 }
 
-<body>
-    <div class="text-left" style="margin-bottom: 32px;">
-        <h1>Greenfield Local Hub</h1>
-        <p>Local, ethically sourced produce, ready for direct collection or delivery right to your door!</p>
-        <a href="/Products" class="btn btn-success" style="background-color:black">View Products</a>
+<section class="hero-section mb-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-7 text-center text-md-start text-white py-5">
+                <h1 class="display-4 fw-bold">Fresh, Local, Sustainable</h1>
+                <p class="lead mb-4">Discover the finest produce from local farmers and producers. Support your community while enjoying the freshest, quality ingredients delivered right to you.</p>
+                <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                    <a asp-controller="Products" asp-action="Index" class="btn btn-outline-light btn-lg px-4">Browse All</a>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div>
-        <h5>What are the benefits of buying Locally?</h5>
-        <br />
-        <h6> Boosts Local Economy </h6>
-        <p class="text-muted"> Money spent locally tends to stay within the community, supporting local farms, and producers rather than going to large distant corporations helps the local economy by keeping money going through a cycle within a community. </p>
-        <br />
-        <h6> Superior Quality and Freshness </h6>
-        <p class="text-muted"> Local food is generally fresher, tastier, and more nutricious because it tends to get harvested at its peak and does not require extrensive preservatives for long-distance transport. </p>
-        <br />
-        <h6> Supports Sustainability </h6>
-        <p class="text-muted"> Local producers often use sustainable farming methods, such as organic parctices, reducing dependence on chemical pesticides and protecting soil health. </p>
-    </div>
+</section>
 
-    <br />
-    <div>
-        <h5>What do we do?</h5>
-        <br />
-        <h6>Greenfield Local Hub</h6>
-        <p class="text-muted">Body text</p>
+<style>
+    .hero-section {
+        background: linear-gradient(rgba(2, 48, 32, 0.55), rgba(2, 48, 32, 0.2)), url('/images/field.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 420px;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .feature-card {
+        transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .benefit-title {
+        font-weight: 600;
+    }
+</style>
+
+<div class="container mb-5">
+    <h3 class="mb-4">Why buy locally?</h3>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h5 class="benefit-title">Boosts Local Economy</h5>
+                    <p class="text-muted mb-0">Money spent locally tends to stay within the community, supporting farms and producers rather than distant corporations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h5 class="benefit-title">Superior Quality & Freshness</h5>
+                    <p class="text-muted mb-0">Local food is fresher and more nutritious because it is harvested at peak and travels shorter distances.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h5 class="benefit-title">Supports Sustainability</h5>
+                    <p class="text-muted mb-0">Local producers often use sustainable practices that protect soil health and reduce transport emissions.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
+</div>
+
+<div class="container mb-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h3>What we do</h3>
+            <p class="text-muted">Greenfield Local Hub connects customers with trusted local producers. We aggregate produce, manage orders, and ensure reliable delivery or collection options so you get fresh products directly from the source.</p>
+            <p class="mb-0"><a asp-controller="About" asp-action="Index" class="btn btn-outline-secondary">Learn more</a></p>
+        </div>
+        <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+                <img src="/images/produce.jpg" alt="Fresh produce" class="img-fluid rounded" />
+            </div>
+        </div>
+    </div>
+</div>
+
+        

@@ -4,109 +4,146 @@
     ViewData["Title"] = "Checkout";
 }
 
-<h1>Checkout</h1>
-<p>Choose how you would like to receive your order.</p>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">Checkout</h2>
+                    <p class="text-muted">Choose how you would like to receive your order.</p>
 
-<form asp-action="Create" method="post">
+                    <form asp-action="Create" method="post">
 
-    <div asp-validation-summary="ModelOnly" style="color:red;"></div>
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-    <input type="hidden" name="basketId" value="@ViewBag.BasketId" />
+                        <input type="hidden" name="basketId" value="@ViewBag.BasketId" />
 
-    <div style="margin-bottom:20px;">
-        <label style="font-weight:bold; display:block; margin-bottom:10px;">Order Method</label>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Order Method</label>
+                            <div class="form-check">
+                                <input asp-for="Delivery" id="deliveryCheck" class="form-check-input" />
+                                <label class="form-check-label" for="deliveryCheck">Delivery</label>
+                            </div>
+                            <div class="form-check">
+                                <input asp-for="Collection" id="collectionCheck" class="form-check-input" />
+                                <label class="form-check-label" for="collectionCheck">Collection</label>
+                            </div>
+                        </div>
 
-        <div>
-            <input asp-for="Delivery" id="deliveryCheck" />
-            <label asp-for="Delivery">Delivery</label>
+                        <div id="deliveryTypeGroup" class="mb-3" style="display:none;">
+                            <label asp-for="DeliveryType" class="form-label"></label>
+                            <select asp-for="DeliveryType" class="form-select">
+                                <option value="">Select Delivery Type</option>
+                                <option value="Next Day">Next Day</option>
+                                <option value="First Class">First Class</option>
+                                <option value="Standard">Standard</option>
+                            </select>
+                            <span asp-validation-for="DeliveryType" class="text-danger"></span>
+                        </div>
+
+                        <div id="collectionDateGroup" class="mb-3" style="display:none;">
+                            <label asp-for="CollectionDate" class="form-label"></label>
+                            <input asp-for="CollectionDate" type="date" id="CollectionDate" class="form-control" />
+                            <div class="form-text">Earliest collection date is 2 days from today.</div>
+                            <span asp-validation-for="CollectionDate" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                            <a asp-controller="Baskets" asp-action="Index" class="btn btn-secondary">Back to Basket</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div> 
-            <input asp-for="Collection" id="collectionCheck" />
-            <label asp-for="Collection">Collection</label>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Order Summary</h5>
+
+                    @if (ViewBag.BasketProducts != null)
+                    {
+                        <ul class="list-unstyled">
+                            @foreach (var item in (IEnumerable<GreenfieldLocal.Models.BasketProducts>)ViewBag.BasketProducts)
+                            {
+                                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                    <div>
+                                        <div class="fw-semibold">@item.Products.ProductName</div>
+                                        <div class="text-muted small">Qty: @item.Quantity</div>
+                                    </div>
+                                    <div>£@((item.Products.Price * item.Quantity).ToString("0.00"))</div>
+                                </li>
+                            }
+                        </ul>
+                    }
+
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Subtotal</span>
+                            <span>£@(((decimal)ViewBag.Subtotal).ToString("0.00"))</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Loyalty Discount</span>
+                            <span>-£@(((decimal)ViewBag.Discount).ToString("0.00"))</span>
+                        </div>
+                        <hr />
+                        <div class="d-flex justify-content-between fw-bold">
+                            <span>Total</span>
+                            <span>£@(((decimal)ViewBag.Total).ToString("0.00"))</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div id="deliveryTypeGroup" style="display:none; margin-bottom:15px;">
-        <label asp-for="DeliveryType"></label>
-        <select asp-for="DeliveryType">
-            <option value="">Select Delivery Type</option>
-            <option value="Next Day">Next Day</option>
-            <option value="First Class">First Class</option>
-            <option value="Standard">Standard</option>
-        </select>
-        <br />
-        <span asp-validation-for="DeliveryType" style="color:red;"></span>
-    </div>
-
-    <div id="collectionDateGroup" style="display:none; margin-bottom:20px;">
-        <label asp-for="CollectionDate"></label>
-        <input asp-for="CollectionDate" type="date" id="CollectionDate" />
-        <div>Earliest collection date is 2 days from today.</div>
-        <span asp-validation-for="CollectionDate" style="color:red;"></span>
-    </div>
-
-    <div>
-        <button type="submit">Place Order</button>
-    </div>
-
-    <div style="margin-top:10px;">
-        <a asp-controller="Baskets" asp-action="Index">
-            Back to Basket
-        </a>
-    </div>
-
-</form>
+</div>
 
 <script>
-    const collectionDateInput = document.getElementById("CollectionDate");
+    (function () {
+        const collectionDateInput = document.getElementById("CollectionDate");
 
-    const today = new Date();
-    today.setDate(today.getDate() + 2);
-    const minDate = today.toISOString().split("T")[0];
+        const today = new Date();
+        today.setDate(today.getDate() + 2);
+        const minDate = today.toISOString().split("T")[0];
 
-    if (collectionDateInput){
-        collectionDateInput.min = minDate;
-    }
-
-    const deliveryCheck = document.getElementById("deliveryCheck");
-    const collectionCheck = document.getElementById("collectionCheck");
-
-    const deliveryTypeGroup = document.getElementById("deliveryTypeGroup");
-    const collectionDateGroup = document.getElementById("collectionDateGroup");
-
-    function updateForm() {
-
-        deliveryTypeGroup.style.display = "none";
-        collectionDateGroup.style.display = "none";
-
-        deliveryCheck.disabled = false;
-        collectionCheck.disabled = false;
-
-        if (deliveryCheck.checked) {
-
-            deliveryTypeGroup.style.display = "block";
-            collectionCheck.disabled = true;
-
-        }
-        else if (collectionCheck.checked) {
-
-            collectionDateGroup.style.display = "block";
-            deliveryCheck.disabled = true;
-
+        if (collectionDateInput) {
+            collectionDateInput.min = minDate;
         }
 
-    }
+        const deliveryCheck = document.getElementById("deliveryCheck");
+        const collectionCheck = document.getElementById("collectionCheck");
 
-    deliveryCheck.addEventListener("change", updateForm);
-    collectionCheck.addEventListener("change", updateForm);
+        const deliveryTypeGroup = document.getElementById("deliveryTypeGroup");
+        const collectionDateGroup = document.getElementById("collectionDateGroup");
 
-    updateForm();
+        function updateForm() {
+            if (!deliveryCheck || !collectionCheck) return;
+
+            deliveryTypeGroup.style.display = "none";
+            collectionDateGroup.style.display = "none";
+
+            deliveryCheck.disabled = false;
+            collectionCheck.disabled = false;
+
+            if (deliveryCheck.checked) {
+                deliveryTypeGroup.style.display = "block";
+                collectionCheck.disabled = true;
+            }
+            else if (collectionCheck.checked) {
+                collectionDateGroup.style.display = "block";
+                deliveryCheck.disabled = true;
+            }
+        }
+
+        if (deliveryCheck) deliveryCheck.addEventListener("change", updateForm);
+        if (collectionCheck) collectionCheck.addEventListener("change", updateForm);
+
+        updateForm();
+    })();
 </script>
 
-
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 }

@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <section class="hero-section rounded nb-5">
+        <div class="container text-center text-md-start px-5">
+            <h1 class="display-3 fw-bold">Fresh, Local, Sustainable</h1>
+            <p class="lead mb-4">Discover the finest produce from local farmers and producers. Support your community while enjoying the freshest, quality ingrediants delivered right to you. </p>
+            <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                <a asp-controller="Products" asp-action="Index" class="btn btn-light btn-lg px-4" style="align-self:center">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    <style>
+            .hero-section {
+                background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4), url('/images/field.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 550px;
+                display: flex;
+                align-items: center;
+                color: white;
+            }
+    </style>
+    <div>
+        <h5>What are the benefits of buying Locally?</h5>
+        <br />
+        <h6> Boosts Local Economy </h6>
+        <p class="text-muted"> Money spent locally tends to stay within the community, supporting local farms, and producers rather than going to large distant corporations helps the local economy by keeping money going through a cycle within a community. </p>
+        <br />
+        <h6> Superior Quality and Freshness </h6>
+        <p class="text-muted"> Local food is generally fresher, tastier, and more nutricious because it tends to get harvested at its peak and does not require extrensive preservatives for long-distance transport. </p>
+        <br />
+        <h6> Supports Sustainability </h6>
+        <p class="text-muted"> Local producers often use sustainable farming methods, such as organic parctices, reducing dependence on chemical pesticides and protecting soil health. </p>
+    </div>
+
+    <br />
+    <div>
+        <h5>What do we do?</h5>
+        <br />
+        <h6>Greenfield Local Hub</h6>
+        <p class="text-muted">Body text</p>
+    </div>
+</body>

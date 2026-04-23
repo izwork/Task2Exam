@@ -85,6 +85,47 @@ namespace GreenfieldLocal.Controllers
         public IActionResult Create(int basketId)
         {
             ViewBag.basketId = basketId;
+            ViewBag.BasketId = basketId; // provide both casings for views
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+            {
+                return View();
+            }
+
+            // Load basket products and calculate totals so the checkout page can show an order summary
+            var basket = _context.Basket.FirstOrDefault(x => x.BasketId == basketId && x.UserId == userId && x.Status);
+            if (basket == null)
+            {
+                return View();
+            }
+
+            var basketProducts = _context.BasketProducts
+                .Where(x => x.BasketId == basketId)
+                .Include(x => x.Products)
+                .ToList();
+
+            decimal subtotal = 0m;
+            foreach (var bp in basketProducts)
+            {
+                subtotal += bp.Products.Price * bp.Quantity;
+            }
+
+            var orderCount = _context.Orders.Count(x => x.UserId == userId);
+            decimal discount = 0m;
+            if (orderCount >= 5)
+            {
+                discount = subtotal * 0.10m;
+            }
+
+            decimal total = subtotal - discount;
+
+            ViewBag.Subtotal = subtotal;
+            ViewBag.Discount = discount;
+            ViewBag.Total = total;
+            ViewBag.OrderCount = orderCount;
+            ViewBag.BasketProducts = basketProducts;
+
             return View();
         }
 
