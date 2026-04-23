@@ -1,14 +1,25 @@
 ﻿@model IEnumerable<GreenfieldLocal.Models.Orders>
 
 @{
-    ViewData["Title"] = "Your Orders";
+    ViewData["Title"] = "Orders";
 }
 
-<h1>Your Orders</h1>
+<h1 class="mb-4">All Orders</h1>
 
 @if (!Model.Any())
 {
-    <p>You have no orders yet.</p>
+    <div class="empty-basket-card p-4 rounded">
+        <div class="d-flex align-items-center gap-3">
+            <div class="empty-basket-icon">
+                <img src="~/images/shopping-icon.png" />
+            </div>
+            <div>
+                <h3 class="mb-1">You have no orders yet!</h3>
+                <p class="mb-2 text-muted">Looks like you haven't purchased anything.</p>
+                <a asp-controller="Products" asp-action="Index" class="btn btn-continue">Continue shopping</a>
+            </div>
+        </div>
+    </div>
 }
 else
 {

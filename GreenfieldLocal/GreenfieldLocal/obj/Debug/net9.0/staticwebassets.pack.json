@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\images\\dark-mode.png"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\eco-icon.png",
+      "PackagePath": "staticwebassets\\images\\eco-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\email-icon.png",
+      "PackagePath": "staticwebassets\\images\\email-icon.png"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\high-contrast.png",
       "PackagePath": "staticwebassets\\images\\high-contrast.png"
     },
@@ -67,6 +75,10 @@
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\reset.png",
       "PackagePath": "staticwebassets\\images\\reset.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\shopping-icon.png",
+      "PackagePath": "staticwebassets\\images\\shopping-icon.png"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\speak-text.png",
