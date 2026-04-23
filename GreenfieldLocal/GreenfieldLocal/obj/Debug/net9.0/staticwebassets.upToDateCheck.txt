@@ -72,12 +72,13 @@ wwwroot\images\banana.png
 wwwroot\images\brown-eggs.png
 wwwroot\images\cart-icon.png
 wwwroot\images\dark-mode.png
-wwwroot\images\eco-icon.png
 wwwroot\images\email-icon.png
+wwwroot\images\field.jpg
 wwwroot\images\high-contrast.png
 wwwroot\images\honey.png
 wwwroot\images\orange.png
 wwwroot\images\orange-juice.png
+wwwroot\images\plant-icon.png
 wwwroot\images\raisin-bread.png
 wwwroot\images\reset.png
 wwwroot\images\shopping-icon.png

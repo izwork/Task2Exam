@@ -45,12 +45,12 @@
       "PackagePath": "staticwebassets\\images\\dark-mode.png"
     },
     {
-      "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\eco-icon.png",
-      "PackagePath": "staticwebassets\\images\\eco-icon.png"
-    },
-    {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\email-icon.png",
       "PackagePath": "staticwebassets\\images\\email-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\field.jpg",
+      "PackagePath": "staticwebassets\\images\\field.jpg"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\high-contrast.png",
@@ -67,6 +67,10 @@
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\orange.png",
       "PackagePath": "staticwebassets\\images\\orange.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\plant-icon.png",
+      "PackagePath": "staticwebassets\\images\\plant-icon.png"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-5\\Documents\\GitHub\\Task2Exam\\GreenfieldLocal\\GreenfieldLocal\\wwwroot\\images\\raisin-bread.png",
