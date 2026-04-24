@@ -184,15 +184,15 @@ namespace GreenfieldLocal.Data
                         Stock = 90,
                         Price = 0.55m,
                         SuppliersId = FreshFarm.SuppliersId,
-                        ImagePath = "/images/orange.png"
+                        ImagePath = "/images/orange.jpg"
                     },
                        new Products
                     {
-                        ProductName = "Raisin Bread",
+                        ProductName = "Bread",
                         Stock = 60,
                         Price = 1.20m,
                         SuppliersId = SandwellFarm.SuppliersId,
-                        ImagePath = "/images/raisin-bread.png"
+                        ImagePath = "/images/bread.jpg"
                     }
                 };
 
