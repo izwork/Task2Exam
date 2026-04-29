@@ -175,13 +175,31 @@ namespace GreenfieldLocal.Controllers
                 return NotFound();
             }
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get the current logged in user's Id.
-            var supplier = await _context.Suppliers.FirstOrDefaultAsync(x => x.UserId == userId); // Find the supplier associated with the userId.
-            if (supplier == null || products.ProductsId != supplier.SuppliersId)
+            if (userId == null)
             {
                 return Unauthorized();
             }
 
-            return View(products);
+            // Allow Admins and Developers to view the delete page for any product
+            if (User.IsInRole("Admin") || User.IsInRole("Developer"))
+            {
+                return View(products);
+            }
+
+            // For Suppliers, ensure the product belongs to their supplier record
+            if (User.IsInRole("Supplier"))
+            {
+                var supplier = await _context.Suppliers.FirstOrDefaultAsync(x => x.UserId == userId); // Find the supplier associated with the userId.
+                if (supplier == null || products.SuppliersId != supplier.SuppliersId)
+                {
+                    return Unauthorized();
+                }
+
+                return View(products);
+            }
+
+            // Default deny
+            return Unauthorized();
         }
 
         // POST: Products/Delete/5
