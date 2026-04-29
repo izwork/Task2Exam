@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\GreenfieldLocal.yfhvw15xdy.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Dr77/SAyF6lyFXdWWZffmj2Qd/P0Ds/RU98eknuy0vA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Dr77/SAyF6lyFXdWWZffmj2Qd/P0Ds/RU98eknuy0vA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 24 Apr 2026 08:03:15 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Dr77/SAyF6lyFXdWWZffmj2Qd/P0Ds/RU98eknuy0vA=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Apr 2026 11:42:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/GreenfieldLocal/GreenfieldLocal.yfhvw15xdy.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\GreenfieldLocal.yfhvw15xdy.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yfhvw15xdy"},{"Name":"integrity","Value":"sha256-Dr77/SAyF6lyFXdWWZffmj2Qd/P0Ds/RU98eknuy0vA="},{"Name":"label","Value":"_content/GreenfieldLocal/GreenfieldLocal.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Dr77/SAyF6lyFXdWWZffmj2Qd/P0Ds/RU98eknuy0vA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 24 Apr 2026 08:03:15 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Dr77/SAyF6lyFXdWWZffmj2Qd/P0Ds/RU98eknuy0vA=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Apr 2026 11:42:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/GreenfieldLocal/images/accessibility-icon.ph2finfltn.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\accessibility-icon.png'))</AssetFile>

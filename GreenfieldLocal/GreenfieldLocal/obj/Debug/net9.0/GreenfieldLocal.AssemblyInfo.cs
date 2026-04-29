@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GreenfieldLocal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fa7b58949665789390aa3e3746554e8b7bb8510")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15eb8967c423a0d416031d914cd57f3e7dcced12")]
 [assembly: System.Reflection.AssemblyProductAttribute("GreenfieldLocal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GreenfieldLocal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
